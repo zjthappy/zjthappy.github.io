@@ -1,8 +1,266 @@
-<p>Hello 大家好</p>
-<p>我是zjt，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>谢念昂-前端-2022-简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        max-width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em 2em;
+      }
+
+      section {
+        margin-bottom: 12px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header > h4 {
+        margin: 0 auto 0 12px;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+
+      li {
+        break-inside: avoid-page;
+      }
+    </style>
+    <style>
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+        margin: 8px 0;
+      }
+    </style>
+
+    <style>
+      .projects p {
+        color: #666;
+      }
+    </style>
+
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
+        <h1>谢念昂</h1>
+        <p>男 | 22岁 | 前端开发工程师 | 上海</p>
+        <p>
+          手机：<a href="tel:15346349897">15346349897</a> | 微信：15346349897 |
+          邮箱：<a href="mailto:xna33@qq.com">xna33@qq.com</a>
+        </p>
+        <p>
+          个人主页：<a href="https://xna00.github.io/" target="__blank"
+            >https://xna00.github.io</a
+          >
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2017年</time>~<time>2021年</time></span>
+          东华大学 电气工程及其自动化专业 本科
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>技能概述</h2>
+        <div class="wrapper">
+          <!-- <div id="skills"></div> -->
+          <ul>
+            <li>熟练掌握 ES6、TypeScript、React 相关技术</li>
+            <li>熟练的业务组件提取、状态管理、代码抽象</li>
+            <li>有一定的后端开发经验（Node.js）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>字节跳动</h3>
+              <h4>2021年7月~至今</h4>
+            </header>
+            <p>负责电商运营平台微前端主应用的日常迭代维护、性能优化</p>
+            <p>
+              从零到一开发运营平台的权限管理系统，基于角色控制访问。统一管理维护运营平台的权限
+            </p>
+            <p>
+              负责部分移动端页面，设计并实现飞书移动端、飞书PC端、Web端统一展示的方案
+            </p>
+            <p>设计并实现基于 ServiceWorker 的移动端小流量测试方案</p>
+            <p>
+              开发接口生成工具，根据 IDL 自动生成前端 TypeScript
+              接口文件，提高开发效率，收到同事好评
+            </p>
+            <!-- <p>参与开发 FEMS，为微前端应用提供通用能力。负责数据分析、应用管理模块的全栈开发</p>
+          <p>参与设计实现微前端共享模块方案，解决微前端中资源重复加载引起的性能问题。子应用体积减小50%，打包时间减少60%，首屏时间减少0.3秒</p> -->
+          </li>
+        </ol>
+      </section>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>新人引导</h3>
+            </header>
+            <p>
+              新人引导是运营平台主应用提供的一项通用能力。类似于游戏里的新手教程，圈住某个元素并高亮，在附近展示一个卡片，包含一些描述。接入方只需要通过简单的配置，即可在子应用中使用。
+            </p>
+            <p>相关技术：React、Node.js、Express.js、MongoDB</p>
+            <p>负责前后端开发，包括展示引导卡片、后台配置页、相关接口</p>
+          </li>
+          <li>
+            <header>
+              <h3>权限管理</h3>
+            </header>
+            <p>
+              权限管理是运营平台提供的一项通用能力。基于角色控制权限，根据用户、用户组、角色、资源之间的关系，判断某个用户是否有相关接口和菜单的权限。接入方可通过简单配置，控制自己接口和页面的访问权限。
+            </p>
+            <p>相关技术：React、antd、tailwindcss</p>
+            <p>
+              负责前端请求库、权限拦截引导页、权限申请中心、资源管理、角色管理、用户管理、用户组管理、权限到期提醒、权限续期等
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>橙蕉360</h3>
+            </header>
+            <p>
+              橙蕉360是一组移动端页面，包含直播间、达人、商家等的信息概览页。与运营平台全局搜索配合，点击搜索结果，在右侧打开抽屉展示概览页。支持页面的前进后退、一键分享至飞书。可以在飞书中打开，自适应展示。
+            </p>
+            <p>相关技术：React、unocss</p>
+            <p>设计技术方案，在三种客户端自适应展示</p>
+            <p>设计并实现基于 ServiceWorker 的移动端小流量测试方案</p>
+            <p>开发浏览器中的页面容器，开发三端自适应组件及项目通用组件</p>
+            <p>带领两个同事，分配任务，主导项目平稳推进</p>
+          </li>
+          <li>
+            <header>
+              <h3>版本更新提示</h3>
+            </header>
+            <p>
+              有些用户长时间不刷新页面，接口更新后，前后端版本不匹配，会出现各种异常。使用主动/被动的方法，检查对比当前页面子应用的版本与子应用的最新版本，如果版本不一致，提示用户刷新。
+            </p>
+            <p>相关技术：ServiceWorker、Web Crypto、WebSocket、Webhook</p>
+            <p>设计技术方案，完成前端、BFF 开发</p>
+          </li>
+          <li>
+          <header>
+            <h3>其它</h3>
+          </header>
+          <p>
+            运营平台的菜单导航、公告、oncall、水印等
+          </p>
+          <p>性能优化，使用 ServiceWorker 减少 60% 资源请求时间、使用 React.lazy 加快页面渲染、使用 CSS filter 减少图片请求数量等</p>
+          
+        </li>
+        </ol>
+      </section>
+      <section class="projects">
+        <h2>开源项目</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>UnoCSS Language Server</h3>
+              <span>
+                <a
+                  href="https://github.com/xna00/unocss-language-server"
+                  target="_blank"
+                  >源码链接</a
+                >
+              </span>
+            </header>
+            <p>
+              用于 unocss 的 langauge server，基于
+              <a
+                href="https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+                target="_blank"
+                >Language Server Protocol</a
+              >
+              ，在 Neovim 中提供代码补全、Hover 提示、加载配置等能力。
+            </p>
+            <p>相关技术：Node.js、LSP、TypeScript、CI/CD (GitHub Actions)</p>
+          </li>
+        </ol>
+      </section>
+    </article>
+  </body>
+</html>
